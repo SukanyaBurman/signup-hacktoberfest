@@ -1,0 +1,117 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+}
+.sec{
+    height: 500px;
+    width: 900px;
+    box-shadow: 0 0 20px 20px rgba(0,0,0, 0.05 );
+}
+.leftsec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.signin{
+    position: relative;
+    font-size: 50px;
+    font-weight: 1000;
+    padding: 10px 30px;
+    bottom: 20px;
+    transition: 0.8s;
+}
+.signin:hover{
+        color: #FF0032;
+}
+.login{
+    margin: 15px;
+    padding: 5px 10px;
+    width: 300px;
+    font-size: 17px;
+    background-color: rgb(240, 240, 240);
+    border: none;
+    font-weight: 500;
+}
+.login:focus{
+     outline: none;
+}
+.pass{
+    margin: 10px;
+    padding: 5px 10px;
+    width: 300px;  
+    font-size: 17px;
+    background-color: rgb(240, 240, 240);
+    border: none;
+}
+.pass:focus{
+    outline: none;
+}
+.for{
+    margin: 10px;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    top: 10px;
+}
+.btn1{
+    border: none;
+    font-size: 20px;
+    padding: 10px 40px;
+    font-weight: 500;
+    position: relative;
+    top: 20px;
+
+    color: #Fff;
+    background: rgb(44, 44, 44); 
+}
+/* Right Sec */
+.rightsec{
+    color: #Fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: rgb(44, 44, 44); 
+}
+.h1{
+ padding: 5px 10px;  
+ font-size: 50px;
+ position: relative;   
+ bottom: 20px;
+ font-family: 'Poppins', sans-serif;
+}
+.p1{ 
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: 500;  
+}
+.btn2{
+    font-size: 20px;
+    padding: 10px 40px;
+    font-weight: 500;
+    position: relative;
+    top: 40px;
+
+    color: #Fff;
+    border: 1px solid #Fff;
+    background: none;   
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap" rel="stylesheet">
+    <title>Document</title><script src="/AUTH/controller/controller.js"></script>
+</head>
+<body>
+    <main class="sec">
+    <!-- Left Sec -->
+    <form action="http://localhost:6960/api/auth/signin"  method="POST">
+    <div class="leftsec">
+     <h1 class="signin"> Sign in</h1>
+     <input type="email" placeholder="Enter Email" class="login"  name ="email">
+     <input type="password" placeholder="Password" class="pass" name ="password">
+     <a href="" class="for">Forgot Password ?</a>
+     <button class="btn1" type="submit" id="signIN">Sign In</button>
+     <div id="responseMessage"></div>
+     </div>
+    </form>
+    <!-- Right Sec -->
+    <div class="rightsec">
+     <h1 class="h1">Hello , Friend !</h1>
+     <p class="p1">Dont Have an acccout want to join ?</p>
+     <button class="btn2" id="signUP" >Sign Up</button>
+     </div>
+    </main>
+</body>
+
+<script>
+const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const container = document.getElementById('container');
+
+signUpButton.addEventListener('click', () => {
+	container.classList.add("right-panel-active");
+});
+const x = () => {
+	container.classList.remove("right-panel-active");
+};
+signInButton.addEventListener('dblclick', x)
+</script>
+
+</html>

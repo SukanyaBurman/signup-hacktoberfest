@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap" rel="stylesheet">
+<title>SIGN UP</title>
+    
+</head>
+<body>
+    <main class="sec">
+    <!-- Left Sec -->
+    <form action="http://localhost:6960/api/auth/signup"  method="POST">
+    <div class="leftsec">
+     <h1 class="signin"> Sign Up</h1>
+     <input type="text" placeholder="Username" class="username" id="username">
+     <div class="line"></div>
+     <input type="email" placeholder="Email" class="login"  name ="email">
+     <div class="line"></div>
+     <input type="password" placeholder="password" class="pass" name ="password">
+     <div class="line"></div>
+     <input type="password" placeholder="Comfirm Password" class="cpass" name ="password">
+     <div class="line"></div>
+     <button class="btn1" type="submit" id="signup">Sign Up</button>
+     
+     </div>
+    </form>
+    <!-- Right Sec -->
+    <form action="http://127.0.0.1:5501/PROJECT/client/signin/login.html" method="post">
+    <div class="rightsec">
+     <h1 class="h1">Hello !</h1>
+     <p class="p1">Already Have an acccout ?</p>
+     <button class="btn2" id="signUP" >Sign In</button>
+     </div>
+    </form>
+    </main>
+</body>
+
+<script>
+const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const container = document.getElementById('container');
+
+signUpButton.addEventListener('click', () => {
+	container.classList.add("right-panel-active");
+});
+const x = () => {
+	container.classList.remove("right-panel-active");
+};
+signInButton.addEventListener('dblclick', x)
+</script>
+
+</html>
