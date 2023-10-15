@@ -1,4 +1,4 @@
-# signup-signin-hacktoberfest
+# signup-hacktoberfest
 
 ## Project Description
 This project is a basic, static webpage for Sign In and Sign Up created using **HTML** and **CSS.** 
