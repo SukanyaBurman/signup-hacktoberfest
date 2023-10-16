@@ -2,7 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: cursive;
 }
 body{
     height: 100vh;
@@ -56,10 +56,10 @@ main{
     opacity: 30%;
 }
 .pass{
-    margin: 4px;
+    margin: 3px;
     padding: 5px 10px;
     width: 350px;  
-    font-size: 20px;
+    font-size: 15px;
     border: none;
     
 }
@@ -154,7 +154,7 @@ main{
  font-size: 50px;
  position: relative;   
  bottom: 20px;
- font-family: 'Poppins', sans-serif;
+ font-family: cursive;
 }
 .p1{ 
     padding: 5px 10px;
@@ -162,7 +162,7 @@ main{
     font-weight: 500;  
 }
 .btn2{
-    font-size: 20px;
+    font-size: 15px;
     padding: 10px 40px;
     font-weight: 500;
     position: relative;
